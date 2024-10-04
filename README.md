@@ -52,6 +52,5 @@ Contributions are welcome! Please fork this repository, make your changes, and s
 ## License
 This project is licensed under the MIT License.
 
+For any query's [rragavan2004@gmail.com].
 ---
-
-Feel free to tailor the content to better fit your specific project details. Good luck with your Smart India Hackathon project! 🚀
