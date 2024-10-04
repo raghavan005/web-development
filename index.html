@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artizon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Or if using PNG -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    
+    
+</head>
+<body>
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt=""></a> 
+      <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="login/login.html">Login</a></li>
+            <li id="lg-bag"><a href="cart.html">
+            <i class="fa fa-shopping-bag"></i></a></li>
+            <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </ul>
+        
+      </div>
+      
+      <div id="mobile">
+        
+        <a href="#" class="cart-button"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+
+      </div>
+    </section>
+    <section id="hero">
+        <h4>Discover unique, handcrafted treasures</h4>
+        <h2>One-of-a-kind pieces, curated just for you</h2>
+        <h1>Artisanal excellence, delivered to your door</h1>
+        <p>Save more with coupons & upto 70% off!</p>
+        <button>Shop Now</button>
+        <div id="rental-offer-banner">
+          <p><span>Exclusive Offer: Up to 50% off on Rentals!</span></p>
+      </div>
+      
+    </section>
+    
+    <section id="rental-banner" class="section-p1">
+      <div class="rental-banner-content">
+          <h2>Exclusive Rental Service</h2>
+          <p>Rent unique, handcrafted items from local artisans at affordable rates. Experience art like never before!</p>
+          <button onclick="window.location.href='#rental-feature'">Explore Rentals</button>
+      </div>
+      
+      <!-- Key Features Section -->
+      <div id="key-features">
+          <div class="feature-box">
+              <h5>Rental Services</h5>
+              <p>Rent unique decor items at affordable rates.</p>
+          </div>
+          <div class="feature-box">
+              <h5>Customize Your Own Decors</h5>
+              <p>Create personalized decor that reflects your style.</p>
+          </div>
+          <div>
+            <script src="script.js"></script>
+  <!-- Terms and Conditions Button -->
+<button id="termsBtn" class="normal">Terms and Conditions</button>
+
+<!-- The Modal -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Terms and Conditions</h2>
+      <p><strong>Terms and Conditions for Rentals</strong></p>
+      
+      <ul>
+          <li><strong>Rental Period</strong></li>
+          <ul>
+              <li>The rental period starts when the item is delivered and ends when the item is returned.</li>
+              <li>You must return the item by the agreed date, or additional charges may apply.</li>
+          </ul>
+
+          <li><strong>Rental Fees</strong></li>
+          <ul>
+              <li>The rental fee is charged per day.</li>
+              <li>Any delays in returning the item will result in extra charges.</li>
+              <li>Payment must be made in full before the rental period begins.</li>
+          </ul>
+
+          <li><strong>Item Condition</strong></li>
+          <ul>
+              <li>All rented items must be returned in the same condition they were provided.</li>
+              <li>Any damages or loss of items will result in repair or replacement fees.</li>
+          </ul>
+
+          <li><strong>Cancellations</strong></li>
+          <ul>
+              <li>You may cancel your rental up to 24 hours before the rental period begins for a full refund.</li>
+              <li>Cancellations within 24 hours of the rental period will result in a 50% charge.</li>
+          </ul>
+
+          <li><strong>Liability</strong></li>
+          <ul>
+              <li>We are not responsible for any injuries, accidents, or damages caused while using the rented items.</li>
+          </ul>
+
+          <li><strong>Late Returns</strong></li>
+          <ul>
+              <li>A late fee of ₹XX per day will be charged for items returned after the agreed-upon date.</li>
+          </ul>
+
+          <li><strong>Acceptance of Terms</strong></li>
+          <ul>
+              <li>By renting from us, you agree to these terms and conditions.</li>
+          </ul>
+      </ul>
+  </div>
+</div>
+
+</div>
+<script>
+  // Get modal element
+  var modal = document.getElementById("termsModal");
+
+  // Get open modal button
+  var btn = document.getElementById("termsBtn");
+
+  // Get close button
+  var closeBtn = document.getElementsByClassName("close")[0];
+
+  // Listen for open click
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  // Listen for close click
+  closeBtn.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  // Listen for outside click
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+
+          </div>
+      </div>
+  </section>
+  
+      
+  </section>
+  
+    <section id="feature" class="section-p1">
+        <div class="feature-div">
+          <div class="fe-box hidden">
+            <img src="img/features/feature1.jpg" alt="real-time-tracking" class="features-img">
+            <h6 class="feature-desc">Free Shipping</h6>
+          </div>
+          <div class="fe-box hidden">
+            <img src="img/features/feature2.jpg" alt="real-time-tracking" class="features-img">
+            <h6 class="feature-desc">Online Order</h6>
+          </div>
+          <div class="fe-box hidden">
+            <img src="img/features/feature3.jpg" alt="real-time-tracking" class="features-img">
+            <h6 class="feature-desc">Save Money</h6>
+          </div>
+          <div class="fe-box hidden">
+            <img src="img/features/feature4.jpg" alt="real-time-tracking" class="features-img">
+            <h6 class="feature-desc">Promotions</h6>
+          </div>
+          <div class="fe-box hidden">
+            <img src="img/features/feature5.jpg" alt="real-time-tracking" class="features-img">
+            <h6 class="feature-desc">24/7 support</h6>
+          </div>
+        </div>
+    </section>
+        
+    </div>
+    <div  class="feature">
+</body>
+    <section id ="product1" class="section-p1">
+        <h2>Featured Product</h2>
+        <h4>Handmade product from local artists</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/product/product1.jpg" alt="">
+                <div class="des">
+                    <span>corner crafts</span>
+                    <h5>Oil</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹20</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart"> </i>
+                </a>
+            </div>
+            <div class="pro">
+              <img src="img/product/product2.jpg" alt="">
+              <div class="des">
+                  <span>corner crafts</span>
+                  <h5>Rattan Bag</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₹40</h4>
+              </div>
+              <a href="#"><i class="fa fa-shopping-cart"> </i>
+              </a>
+          </div>
+          <div class="pro">
+            <img src="img/product/product3.jpg" alt="">
+            <div class="des">
+                <span>corner crafts</span>
+                <h5>Rattan Baskets</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹60</h4>
+            </div>
+            <a href="#"><i class="fa fa-shopping-cart"> </i>
+            </a>
+        </div>
+        <div class="pro">
+          <img src="img/product/product4.jpg" alt="">
+          <div class="des">
+              <span>corner crafts</span>
+              <h5>Wollen Toys</h5>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h4>₹10</h4>
+          </div>
+          <a href="#"><i class="fa fa-shopping-cart"> </i>
+          </a>
+      </div>
+      <div class="pro">
+        <img src="img/product/product5.jpg" alt="">
+        <div class="des">
+            <span>corner crafts</span>
+            <h5>Tote Bag</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>₹20</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart"> </i>
+        </a>
+    </div>
+    <div class="pro">
+      <img src="img/product/product6.jpg" alt="">
+      <div class="des">
+          <span>corner crafts</span>
+          <h5>Necklace</h5>
+          <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <h4>₹10</h4>
+      </div>
+      <a href="#"><i class="fa fa-shopping-cart"> </i>
+      </a>
+  </div>
+  <div class="pro">
+    <img src="img/product/product7.jpg" alt="">
+    <div class="des">
+        <span>corner crafts</span>
+        <h5>Pots</h5>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h4>₹20</h4>
+    </div>
+    <a href="#"><i class="fa fa-shopping-cart"> </i>
+    </a>
+</div>
+<div class="pro">
+                <img src="img/product/product8.jpg" alt="">
+                <div class="des">
+                    <span>corner crafts</span>
+                    <h5>Clothes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹50</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart"> </i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <section id="banner" class="section-m1">
+      <h4>Repair Service</h4>
+      <h2>UP to <span>70% off</span>-All Accessorries</h2>
+      <button class="normal">Explore More</button>
+    </section>
+    <section id ="product1" class="section-p1">
+      <h2>NEW ARRIVALS</h2>
+      <section id="rental-feature" class="section-p1">
+        <h2>Rental Service</h2>
+        <h4>Rent products from local artists at affordable prices</h4>
+        <div class="rental-container">
+            <div class="rental-pro">
+                <img src="img/product/website.jpg" alt="Product Image">
+                
+                <a href="#"><i class="fa fa-shopping-cart"></i> Rent Now</a>
+            </div>
+            <!-- Add more rental products here -->
+        </div>
+    </section>
+    
+      <h4>Local artist handcrafted</h4>
+      <div class="pro-container">
+          <div class="pro">
+              <img src="img/product/product1.jpg" alt="">
+              <div class="des">
+                  <span>corner crafts</span>
+                  <h5>Oil</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₹20</h4>
+              </div>
+              <a href="#"><i class="fa fa-shopping-cart"> </i>
+              </a>
+          </div>
+          <div class="pro">
+            <img src="img/product/product2.jpg" alt="">
+            <div class="des">
+                <span>corner crafts</span>
+                <h5>Rattan Bag</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>₹40</h4>
+            </div>
+            <a href="#"><i class="fa fa-shopping-cart"> </i>
+            </a>
+        </div>
+        <div class="pro">
+          <img src="img/product/product3.jpg" alt="">
+          <div class="des">
+              <span>corner crafts</span>
+              <h5>Rattan Baskets</h5>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h4>₹60</h4>
+          </div>
+          <a href="#"><i class="fa fa-shopping-cart"> </i>
+          </a>
+      </div>
+      <div class="pro">
+        <img src="img/product/product4.jpg" alt="">
+        <div class="des">
+            <span>corner crafts</span>
+            <h5>Wollen Toys</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>₹10</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart"> </i>
+        </a>
+    </div>
+    <div class="pro">
+      <img src="img/product/product5.jpg" alt="">
+      <div class="des">
+          <span>corner crafts</span>
+          <h5>Tote Bag</h5>
+          <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <h4>₹20</h4>
+      </div>
+      <a href="#"><i class="fa fa-shopping-cart"> </i>
+      </a>
+  </div>
+  <div class="pro">
+    <img src="img/product/product6.jpg" alt="">
+    <div class="des">
+        <span>corner crafts</span>
+        <h5>Necklace</h5>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h4>₹10</h4>
+    </div>
+    <a href="#"><i class="fa fa-shopping-cart"> </i>
+    </a>
+</div>
+<div class="pro">
+  <img src="img/product/product7.jpg" alt="">
+  <div class="des">
+      <span>corner crafts</span>
+      <h5>Pots</h5>
+      <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <h4>₹20</h4>
+  </div>
+  <a href="#"><i class="fa fa-shopping-cart"> </i>
+  </a>
+</div>
+<div class="pro">
+              <img src="img/product/product8.jpg" alt="">
+              <div class="des">
+                  <span>corner crafts</span>
+                  <h5>Clothes</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h4>₹50</h4>
+              </div>
+              <a href="#"><i class="fa fa-shopping-cart"> </i>
+              </a>
+          </div>
+      </div>
+
+  </section>
+
+
+  <section id="sm-banner" class="section-p1">
+
+  
+     <div class="banner-box">
+      <h4>Crazy Deals</h4>
+      <h2>buy 1 get 1 free</h2>
+      <span>The best classic product is on sale at care</span>
+      <button class="white">Learn More</button>
+     </div>
+     <div class="banner-box banner-box2">
+      <h4>Spring summer</h4>
+      <h2>Upcomming Season</h2>
+      <span>The best classic product is on sale at care</span>
+      <button class="white">Collection</button>
+     </div>
+    </section>
+    <section id="banner3">
+      <div class="banner-box banner-box">
+        
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter collection -20% OFF</h3>
+        
+       </div>
+       <div class="banner-box banner-box2">
+        
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter collection -20% OFF</h3>
+        
+       </div>
+       <div class="banner-box banner-box3">
+        
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter collection -20% OFF</h3>
+        
+       </div>
+
+    </section>
+    <section id="newslatter" class="section-p1 section-m1">
+      <div class="newtext">
+        <h4>Sign up for news latter</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers</span> </p>
+      </div>
+      <div class="form">
+        <input type=" text" placeholder="Your email address">
+        <button class="normal">Signup</button>
+      </div>
+    </section>
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="Artizon Logo">
+        <h4>Contact</h4>
+        <p>Address: <strong>Kalapatti Main Road, Nehru Nagar, Coimbatore</strong></p>
+        <p>Hours: <strong>9:00 AM - 8:00 PM, Mon-Sat</strong></p>
+        
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-pinterest-p"></i>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+    
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+    
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>Available on App Store & Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="Download on the App Store">
+          <img src="img/pay/play.jpg" alt="Get it on Google Play">
+        </div>
+        <p>Secure payment gateway</p>
+        <img src="img/pay/pay.png" alt="Payment Methods">
+      </div>
+    
+      <div class="copyrights">
+        <p>&copy; 2024, Artizon - HTML CSS Ecommerce Template</p>
+      </div>
+    </footer>
+    
+  
+  
+  
+</body>
+</html>
