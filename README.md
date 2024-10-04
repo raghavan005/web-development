@@ -1,4 +1,4 @@
-# Web Development Project for Smart India Hackathon
+# Online e-commerce platform for local artisans
 
 ## Project Overview
 This project was developed for the Smart India Hackathon with the primary goal of creating an ecommerce website to support and encourage local artisans. The platform provides a marketplace for rural artists to showcase and sell their products. Additionally, it features an innovative rental option for certain items, allowing users to rent products for a specified duration.
