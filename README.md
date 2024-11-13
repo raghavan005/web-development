@@ -49,8 +49,5 @@ This project was developed for the Smart India Hackathon with the primary goal o
 ## Contributing
 Contributions are welcome! Please fork this repository, make your changes, and submit a pull request.
 
-## License
-This project is licensed under the MIT License.
-
 For any query's [rragavan2004@gmail.com].
 ---
